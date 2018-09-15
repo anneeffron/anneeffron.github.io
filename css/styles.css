@@ -5,12 +5,23 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
-img { width: 100%;
+img {
+     width: 100%;
+     border-radius: 50%;
+
 }
 
-.menu-container {
+i{
+    color: #5995DA;
+
+}
+
+header{
   background-color: #5995DA;  /* Blue */
   padding: 20px 0;
+  height: 200px;
+  width: auto;
+  margin-bottom: 0;
   /*display: flex;
   justify-content: center;*/
 }
@@ -22,12 +33,21 @@ img { width: 100%;
   justify-content: space-between;*/
 }
 
-.about{
+.about-me{
   display: flex;
-  flex-direction: row;
+  flex-flow: row wrap;
   justify-content: center;
-  margin-top: 100px;
+  background: url('../images/tiny-squares/tiny-squares.png');
+
 }
+
+.projects {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: space-between;
+}
+
 
 .text{
   height: 200px;
@@ -38,14 +58,51 @@ img { width: 100%;
   width: 200px;
   margin-left: 150px;
 }
+
+h1, h2{
+    font-family: 'Nanum Gothic Coding', monospace;
+
+}
+
+h1 {
+    text-align: center;
+}
+#name {
+    font-size: 50px;
+    color: white;
+    text-align: center;
+
+}
+
+section {
+    height: 350px;
+    width: 350px;
+    background-color: #5995DA;
+    margin-left: 12px;
+    margin-bottom: 12px;
+
+
+}
+
+.research i {
+    color: white;
+}
 /* MEDIA QUERIES */
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
+    i {
+        font-size: 3em;
+
+    }
+    .about-me{
+        flex-flow: row;
+    }
 
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+
 
 }
 
@@ -56,5 +113,8 @@ img { width: 100%;
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+    p {
+        font-size: 20px;
+    }
 
 }
