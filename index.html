@@ -15,6 +15,7 @@
 
 	<!--Google Fonts  -->
 	<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding:700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Scheherazade" rel="stylesheet">
 
 	<!-- fontawesome -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
@@ -31,53 +32,62 @@
 <body>
 	<header>
 
-
-		<h1  id="name"> Coding One Byte At A Time </h1>
+		<div class="title">
+		<h1  id="name"> Coding One Byte At <br> A Time </h1>
+	</div>
 
 	</header>
 
 
 	<article class="about-me">
-		
+
 		<div class="image">
-			<h1> About Me </h1>
 			<img src="images/profile.jpg" alt="profile picture">
 	</div>
 
 			<div class="info">
-				<p> My name is Anne Effron and I'm a senior at Indiana University, Bloomington majoring in Informatics with a minor in Biology. I have a passion for technoloy and how technology can be used to improve different areas spaning from non-profits to working in a science lab. I believe we can build better technology one line of code at a time . </p>
+				<p> My name is Anne Effron and I'm a senior at Indiana University, Bloomington majoring in Informatics with a minor in Biology. I have a passion for technoloy and how technology can be used to improve different areas spaning from non-profits to working in a science lab. I believe we can build better technology one line of code at a time. </p>
+
 
 			</div>
 
 	</article>
-<h1> Experience </h1>
+
 	<article class="projects">
 
-		<section class="webdev">
+
+		<section class="column webdev">
 
 			<h2> Web Development </h2>
+
 			<ul>
-				<li> <a href="https://justiceunlocked.com/"> Justice Unlocked </a> </li>
-				<li> <a href="https://www.interfaithwintershelter.org/"> Interfaith Winter Shelter </a></li>
-				<li><a href="http://html.sice.indiana.edu/~ayeffron/P5-Effron-Anne/index.html"> Final Project </a></li>
+					<p> Sample of my projects: <sup> * </sup>click link </p>
+				<li> <a href="https://justiceunlocked.com/" target="_blank" > Justice Unlocked </a> </li>
+				<li> <a href="https://www.interfaithwintershelter.org/" target="_blank" > Interfaith Winter Shelter </a></li>
+				<li><a href="http://html.sice.indiana.edu/~ayeffron/P5-Effron-Anne/index.html" target="_blank" > Final Project </a></li>
+
 			</ul>
+			<i class="fas fa-laptop"></i>
+
 		</section>
-		<section class="intern">
+		<section class="column intern">
 			<h2> Internships </h2>
 			<ul>
-				<li> ServeIt </li>
-				<li> Roche </li>
+				<li> ServeIt: Team Lead </li>
+				<li> Roche: Marketing Analytics Intern </li>
+
 			</ul>
+			<i class="fas fa-briefcase"></i>
 		</section>
 
-	<section class="research">
+	<section class="column research">
 			<h2> Research </h2>
 			<ul>
 				<li> Health Informatics </li>
 				<i class="fas fa-user-md"></i>
 				<li> Microbiology </li>
 				<i class="fas fa-flask"></i>
-				<li> Natual Language Processing </li>
+				<li> Natural Language Processing </li>
 				<i class="fas fa-language"></i>
 
 			</ul>
@@ -89,19 +99,31 @@
 	</article>
 
 	<article class="other">
-		<h1> Resume/Contact</h1>
-		<i class="fas fa-envelope"></i> effronanne@gmail.com <br>
-		<a href="https://www.linkedin.com/in/anne-effron"><i class="fab fa-linkedin"></i> www.linkedin.com/in/anne-effron </a><br>
+		<div>
+		<a href="#" onclick="sendEmail();"> <i class="fas fa-envelope"></i><p> Email </p></a>
 
-		<a href="resume.pdf" download>
-  <i class="fas fa-file"> </i> Resume
-</a>
+	</div>
+
+	<div>
+
+		<a href="https://www.linkedin.com/in/anne-effron" target="_blank"><i class="fab fa-linkedin"></i> <p>linkedin</p> </a><br>
+	</div>
+
+
+<div>
+		<a href="resume.pdf" download target="_blank" > <i class="fas fa-file"></i><p> Resume </p></a>
+</div>
 
 	</article>
 
+<script>
 
-
-
+// https://stackoverflow.com/questions/19639900/use-div-as-a-button-and-trigger-a-mailto-when-it-is-clicked
+function sendEmail()
+{
+    window.location = "mailto:effronanne@gmail.com";
+}
+</script>
 
 
 
